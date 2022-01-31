@@ -1,16 +1,14 @@
 
-
+/*  container of AlarmClock*/
 .container{
     position:absolute;
     height:100vh;
     width:100vw;
     left:500px;
-    
-    
-    
+
 }
 
-
+/*  Current Clock Time CSS  */
 #clock-time{
    
     height:200px;
@@ -21,7 +19,7 @@
  
     
 }
-
+/*  Clock Time Header */
 #clock-time h1{
     position:relative;
     font-weight: normal;
@@ -30,6 +28,7 @@
     color:aliceblue;
 }
 
+/*  Container Of Hour Minute Second */
 #square-container{
     position:absolute;
     height: 50px;
@@ -49,7 +48,7 @@
     width:40px;
     background-color: aliceblue;
 }
-
+/*  Hour */
 #square #hour{
     position: absolute;
     border: 1px solid black;
@@ -60,6 +59,8 @@
     left: 21px;
     color:black;
 }
+
+/*  Min */
 #square #min{
     position: absolute;
     border: 1px solid black;
@@ -70,6 +71,8 @@
     left: 104px;
     color:black;
 }
+
+/*  Sec */
 #square #sec{
     position: absolute;
     border: 1px solid black;
@@ -81,6 +84,7 @@
     color:black;
 }
 
+/*  Using Flex to Show containers of Hour min and Second  in Row  */
 #hour-min-sec{
     width:250px;
     position:relative;
@@ -93,7 +97,7 @@
 
 
 
-
+/*  Set alarm Div */
 #set-alarm{
     position:relative;
     text-align: center;
@@ -105,13 +109,14 @@
     top:-20px;
     
 }
-
+/*  Using Flex to Show containers of Hour min and Second  in Row  */
 #flexing{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+/*  Set Button */
 #tset{
     width: 21%;
     top: 106px;
@@ -123,6 +128,7 @@
 
 }
 
+/*  Reset Button */
 #treset{
     width: 21%;
     top: 106px;
@@ -136,8 +142,9 @@
 
 }
 
+/*  Div Of Created Alarm*/
 #set-alarm-container{
-    width: 29%;
+    width: 344px;
     top: 428px;
     position: absolute;
     left: 0px;
@@ -146,8 +153,14 @@
     border-style: inset;
     background-color: #f522228f;
     color: aliceblue;
-    overflow:scroll;
+    overflow-x:scroll;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
 }
+
+
 
 

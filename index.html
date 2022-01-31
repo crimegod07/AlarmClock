@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm clock</title>
     <link rel="stylesheet" href="Style1.css">
@@ -10,12 +9,16 @@
 
 <body>
 
- <div class="container">
-    <div id="clock-time">
+<!-- Conatiner Of  AlarmClock-->
+ <div class="container">  
+
+<!-- Showing Current Time -->
+    <div id="clock-time">  
         <h1>Clock Time</h1>
+
         <div id="square-container">
             
-          <div id="square">
+          <div id="square">         
               <h1 id="hour"></h1>
           </div>
           <div id="square">
@@ -31,7 +34,10 @@
              <h1> MIN </h1>
              <h1> SEC </h1>
         </div>
-        
+  <!-- End OF Showing Current Time -->
+
+
+  <!-- Set ALarm Time -->
     </div>
     <div id="set-alarm">
         <h1>Set Alarm</h1>
@@ -40,14 +46,16 @@
       <div id="smin" class="square"></div>
       <div id="ssec" class="square"></div>
     </div>
+
+<!-- Buttons Of Set And Reset -->
     <div id="buttons">
       <input type="button" value="Set" id="tset"/>
       <input type="button" value="Reset" id="treset" disabled/>
       </div>
-    </div>
-    <div id="set-alarm-container" >
-          
-    </div>
+    </div> 
+
+<!--Container Of Set alarm -->
+    <div id="set-alarm-container"></div>
  </div>
  <script src="script1.js"></script>
 </body>
