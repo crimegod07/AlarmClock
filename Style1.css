@@ -1,0 +1,153 @@
+
+
+.container{
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    left:500px;
+    
+    
+    
+}
+
+
+#clock-time{
+   
+    height:200px;
+    width:350px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color:#525355 ;
+ 
+    
+}
+
+#clock-time h1{
+    position:relative;
+    font-weight: normal;
+    left:100px;
+    top:20px;
+    color:aliceblue;
+}
+
+#square-container{
+    position:absolute;
+    height: 50px;
+    width: 250px;
+    left:60px;
+    top:120px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+
+}
+
+#square{
+    height:40px;
+    width:40px;
+    background-color: aliceblue;
+}
+
+#square #hour{
+    position: absolute;
+    border: 1px solid black;
+    height: inherit;
+    width: inherit;
+    background-color: antiquewhite;
+    top: -22px;
+    left: 21px;
+    color:black;
+}
+#square #min{
+    position: absolute;
+    border: 1px solid black;
+    height: inherit;
+    width: inherit;
+    background-color: antiquewhite;
+    top: -22px;
+    left: 104px;
+    color:black;
+}
+#square #sec{
+    position: absolute;
+    border: 1px solid black;
+    height: inherit;
+    width: inherit;
+    background-color: antiquewhite;
+    top: -22px;
+    left: 186px;
+    color:black;
+}
+
+#hour-min-sec{
+    width:250px;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    left: -40px;
+    top:50px;
+}
+
+
+
+
+#set-alarm{
+    position:relative;
+    text-align: center;
+    height:200px;
+    width:350px;
+    background-image:linear-gradient(45deg, #585858, transparent);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top:-20px;
+    
+}
+
+#flexing{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#tset{
+    width: 21%;
+    top: 106px;
+    position: absolute;
+    left: 80px;
+    border-radius: 16%;
+    height: 17%;
+    border-style: inset;
+
+}
+
+#treset{
+    width: 21%;
+    top: 106px;
+    position: absolute;
+    left: 199px;
+    border-radius: 16%;
+    height: 17%;
+    border-style: inset;
+    background-color: #f522228f;
+    color: aliceblue;
+
+}
+
+#set-alarm-container{
+    width: 29%;
+    top: 428px;
+    position: absolute;
+    left: 0px;
+    border-radius: 16%;
+    height: 17%;
+    border-style: inset;
+    background-color: #f522228f;
+    color: aliceblue;
+    overflow:scroll;
+    
+}
+
+

@@ -1,0 +1,35 @@
+
+     var para = document.getElementById("time");
+     var delete1 = document.getElementById("del1");
+function delEle(){
+para.parentNode.removeChild(para);
+delete1.parentNode.removeChild(delete1);
+
+}
+
+document.getElementById("del1").onclick = function() {delEle()};
+
+
+
+
+
+
+
+
+ del.setAttribute("onclick", "delEle");
+    del.setAttribute("value", "1");
+    p.setAttribute("id", "time");
+    p.setAttribute("value", "1");
+    del.setAttribute("type", "delete");
+    del.setAttribute("value", "1");
+
+
+    var para = document.getElementById("time");
+    var delete1 = document.getElementById("del1");
+
+    window.onclick = function(delEle) {
+            
+        modal.style.display = "none";
+        para.parentNode.removeChild(para);
+        delete1.parentNode.removeChild(delete1);
+    }

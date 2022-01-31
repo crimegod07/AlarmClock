@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+       Alarm Clock 
+    </title>
+    <link rel="stylesheet" href="style.css" >
+    
+  </head>
+  <body>
+    <!-- (A) CURRENT TIME -->
+    
+    <div id="alarmClock">
+      <h1 class="header">CLOCK TIME</h1>
+      <div class="square">
+        <div class="digits" id="chr">00</div>
+        <div class="text">HR</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="cmin">00</div>
+        <div class="text">MIN</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="csec">00</div>
+        <div class="text">SEC</div>
+      </div>
+    </div>
+
+    <!-- (B) SET ALARM -->
+    <div id="tpick">
+      <h1 class="header">SET ALARM</h1>
+      <div id="tpick-h" class="square"></div>
+      <div id="tpick-m" class="square"></div>
+      <div id="tpick-s" class="square"></div>
+      <input type="button" value="Set" id="tset"/>
+      <input type="button" value="Reset" id="treset" disabled/>
+    </div>
+      <div id="display">
+          
+      </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

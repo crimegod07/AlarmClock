@@ -1,0 +1,64 @@
+/* It changes  all the element's  fonts box-sizing and text-alignment */
+*{
+    font-family: Impact, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#alarmClock{
+    background-color: #525355;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+#alarmClock .header {
+     color: #fff; 
+    }
+
+  #alarmClock, #tpick, .square { padding: 10px; }
+  #alarmClock, #tpick {
+    margin: 0 auto;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header {
+    font-weight: normal;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .square, #tpick-h, #tpick-m, #tpick-s { width: 33%; }
+  .text, #tset, #treset { margin-top:10px; }
+  .digits, .square select {
+    font-size: 24px;
+    background: #525355;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  /* (B) CURRENT TIME */
+  
+  #alarmClock .header { color: #fff; }
+  #alarmClock .text { color: #ddd; }
+  
+  /* (C) TIME PICKER */
+  #tpick { 
+      background: linear-gradient(45deg, #7c7575, transparent) 
+    }
+  #tset, #treset {
+    width: 50%;
+    background: #525355;
+    color: #fff;
+    border: 0;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  #tset:disabled, #treset:disabled {
+    color:#fff8f8;
+    background-color: #fff8f8;
+  }
+  
