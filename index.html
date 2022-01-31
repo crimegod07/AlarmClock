@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>
-       Alarm Clock 
-    </title>
-    <link rel="stylesheet" href="style.css" >
-    
-  </head>
-  <body>
-    <!-- (A) CURRENT TIME -->
-    
-    <div id="alarmClock">
-      <h1 class="header">CLOCK TIME</h1>
-      <div class="square">
-        <div class="digits" id="chr">00</div>
-        <div class="text">HR</div>
-      </div>
-      <div class="square">
-        <div class="digits" id="cmin">00</div>
-        <div class="text">MIN</div>
-      </div>
-      <div class="square">
-        <div class="digits" id="csec">00</div>
-        <div class="text">SEC</div>
-      </div>
-    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm clock</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
 
-    <!-- (B) SET ALARM -->
-    <div id="tpick">
-      <h1 class="header">SET ALARM</h1>
-      <div id="tpick-h" class="square"></div>
-      <div id="tpick-m" class="square"></div>
-      <div id="tpick-s" class="square"></div>
+<body>
+
+ <div class="container">
+    <div id="clock-time">
+        <h1>Clock Time</h1>
+        <div id="square-container">
+            
+          <div id="square">
+              <h1 id="hour"></h1>
+          </div>
+          <div id="square">
+            <h1 id="min"></h1>
+          </div>
+          <div id="square">
+            <h1 id="sec"></h1>
+          </div>
+
+        </div>
+        <div id="hour-min-sec">
+             <h1> HR </h1>
+             <h1> MIN </h1>
+             <h1> SEC </h1>
+        </div>
+        
+    </div>
+    <div id="set-alarm">
+        <h1>Set Alarm</h1>
+      <div id="flexing">
+        <div id="shr" class="square"></div>
+      <div id="smin" class="square"></div>
+      <div id="ssec" class="square"></div>
+    </div>
+    <div id="buttons">
       <input type="button" value="Set" id="tset"/>
       <input type="button" value="Reset" id="treset" disabled/>
-    </div>
-      <div id="display">
-          
       </div>
-
-    <script defer src="script.js"></script>
-  </body>
+    </div>
+    <div id="set-alarm-container" >
+          
+    </div>
+ </div>
+ <script src="script1.js"></script>
+</body>
 </html>
